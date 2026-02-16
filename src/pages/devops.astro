@@ -4,13 +4,26 @@ import Project from "../components/Project.astro";
 import Sidebar from "../components/Sidebar.astro";
 const projects = [
   {
-    title: "NetCare",
+    title: "Oracle database administration",
     desc: [
-      "Built an infrastructure for a telemedicine startup focusing on remote patient monitoring",
-      "Created Azure environment from scratch using Terraform as a IaC tool",
-      "Developed a comprehensive CI/CD pipeline for mobile app deployment",
+      CREATE TABLE JLG_EMPLOYEES(
+      FIRST_NAME varchar(150),
+      LAST_NAME varchar(150),
+      COUNTRY_NAME varchar(150),
+      SALARY integer,
+      DEPARTMENT_NAME varchar(100)
+      );
+
+      INSERT INTO JLG_EMPLOYEES(FIRST_NAME, LAST_NAME, COUNTRY_NAME, SALARY, DEPARTMENT_NAME)
+      SELECT e.FIRST_NAME, e.LAST_NAME, c.COUNTRY_NAME, e.SALARY, d.DEPARTMENT_NAME
+      FROM HR.EMPLOYEES e JOIN HR.DEPARTMENTS d ON (e.department_id = d.department_id)
+      JOIN HR.LOCATIONS l ON (d.location_id = l.location_id)
+      JOIN HR.COUNTRIES c ON (l.country_id = c.country_id)
+      WHERE d.department_id BETWEEN 80 AND 90;
+
+      SELECT * FROM jlg_employees;
     ],
-    tech: ["Terraform", "Azure", "Docker", "Nginx", "GitLab CI/CD"]
+    tech: ["SQL", "SQL Developer", "Oracle"]
   },
   {
     title: "DataMesh",
