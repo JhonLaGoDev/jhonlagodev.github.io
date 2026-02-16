@@ -680,13 +680,24 @@ p {
   border-radius: 12px;
 }
 
+.fold-content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Esto fuerza a que todo tenga el mismo ancho visual */
 .fold-content,
 .video-container,
 .social-buttons,
 .contact-info {
   width: 100%;
-  max-width: 580px; /* mismo ancho que .lead */
+  max-width: 600px;
+  text-align: center;
 }
+
 
 
 
