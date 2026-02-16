@@ -668,4 +668,34 @@ p {
     width: 64px;
     height: 64px;
   }
+
+  /* CONTENEDOR DE BOTONES */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;          /* espacio entre botones */
+  margin-top: 32px;
+}
+
+/* INFORMACIÓN DE CONTACTO */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra horizontal */
+  gap: 14px;           /* espacio entre email y phone */
+  margin-top: 24px;
+}
+
+/* Opcional: que los links no se vean subrayados feos */
+.contact-info a {
+  color: #a8a8a8;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.contact-info a:hover {
+  color: #ffffff;
+}
+
 }
