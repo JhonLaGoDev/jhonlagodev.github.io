@@ -669,33 +669,18 @@ p {
     height: 64px;
   }
 
-  /* CONTENEDOR DE BOTONES */
 .social-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;          /* espacio entre botones */
-  margin-top: 32px;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 24px !important;
 }
 
-/* INFORMACIÓN DE CONTACTO */
 .contact-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* centra horizontal */
-  gap: 14px;           /* espacio entre email y phone */
-  margin-top: 24px;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 14px !important;
 }
 
-/* Opcional: que los links no se vean subrayados feos */
-.contact-info a {
-  color: #a8a8a8;
-  text-decoration: none;
-  transition: 0.2s ease;
-}
-
-.contact-info a:hover {
-  color: #ffffff;
-}
 
 }
